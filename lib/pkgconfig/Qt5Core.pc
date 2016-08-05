@@ -1,0 +1,15 @@
+prefix=/home/travis/build/hopetechnik/sestoES_ui/qt-everywhere-opensource-src-5.7.0/qt5pi
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+host_bins=${prefix}/bin
+qt_config=minimal-config small-config medium-config large-config full-config no-pkg-config evdev linuxfb c++11 accessibility egl eglfs eglfs_brcm openvg opengl opengles2 shared qpa reduce_exports clock-gettime clock-monotonic posix_fallocate mremap getaddrinfo ipv6ifname getifaddrs inotify eventfd threadsafe-cloexec poll_poll system-png png doubleconversion freetype harfbuzz system-zlib nis iconv dbus rpath concurrent audio-backend no-qml-debug release
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.7.0
+Libs: -L${libdir} -lQt5Core 
+Libs.private: -lpthread -lz -L/home/travis/build/hopetechnik/sestoES_ui/qt-everywhere-opensource-src-5.7.0/qt5pi/lib -lqtpcre -lm -ldl -lrt  
+Cflags: -I${includedir}/QtCore -I${includedir}
+

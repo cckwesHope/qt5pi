@@ -1,0 +1,14 @@
+prefix=/home/travis/build/hopetechnik/sestoES_ui/qt-everywhere-opensource-src-5.7.0/qt5pi
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Quick
+Description: Qt Quick module
+Version: 5.7.0
+Libs: -L${libdir} -lQt5Quick 
+Libs.private: -L/home/travis/build/hopetechnik/sestoES_ui//rpi_sysroot/opt/vc/lib -L/home/travis/build/hopetechnik/sestoES_ui/qt-everywhere-opensource-src-5.7.0/qt5pi/lib -lQt5Gui -L/home/travis/build/hopetechnik/sestoES_ui/qt-everywhere-opensource-src-5.7.0/qt5pi/lib -lQt5Qml -lQt5Network -lQt5Core -lpthread -lQt5Network -L/home/travis/build/hopetechnik/sestoES_ui/qt-everywhere-opensource-src-5.7.0/qt5pi/lib -lQt5Core -lpthread -lGLESv2  
+Cflags: -I${includedir}/QtQuick -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Qml
+

@@ -1,0 +1,14 @@
+prefix=/home/travis/build/hopetechnik/sestoES_ui/qt-everywhere-opensource-src-5.7.0/qt5pi
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Network
+Description: Qt Network module
+Version: 5.7.0
+Libs: -L${libdir} -lQt5Network 
+Libs.private: -L/home/travis/build/hopetechnik/sestoES_ui/qt-everywhere-opensource-src-5.7.0/qt5pi/lib -lQt5Core -lpthread -lz  
+Cflags: -I${includedir}/QtNetwork -I${includedir}
+Requires: Qt5Core
+
